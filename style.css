@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #F5F7FA;
 }
 
 
@@ -176,16 +177,12 @@ h3 + p {
     font-size: 14px;
 }
 
-.section4 #text_section4 {
-
-}
-
 #section4_padding p {
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
-#learnmore {
+.learnmore {
     padding: 10px 20px;
     background-color: #4CAF4F;
     color: white;
@@ -244,9 +241,144 @@ h3 + p {
 
 .section6 {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 78px;
+    width: 1152px;
+    padding: 70px 0;
+}
+
+#text_section6 p {
+    margin: 2rem 0;
+}
+
+.section7 {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 1152px;
-    padding: 75px 0;
+    display: flex;
+    margin: 0 144px;
+    gap: 78px;
+    padding: 70px 0;
+}
+
+#text_section7 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#text_section7 h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#socialmedias {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+#socialmedias span {
+    display: flex;
+    align-items: center;
+}
+
+#socialmedias span a {
+    color: #4CAF4F;
+}
+
+#all_img {
+    display: flex;
+    flex-direction: row;
+    gap: 2.7rem;
+}
+
+#caring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#part_8 {
+    width: 1152px;
+    margin-bottom: 200px;
+}
+
+#caring p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#all_articles {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.absolute {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    width: 317px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(163, 163, 163) 0px 0px 10px;
+    height: 200px;
+    font-size: 0.6rem;
+    gap: 1rem;
+}
+
+#all_articles article {
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+    gap: 1rem;
+    align-items: center;
+}
+
+#all_articles article h3 {
+    font-size: 1.4rem;
+}
+
+#part_8 article span{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#part_9 {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#part_9 p {
+    font-size: 3rem;
+    font-style: bold;
+    text-align: center;
+}
+
+#get_a_demo {
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer img {
+    width: 100%;
 }
