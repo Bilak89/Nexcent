@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: #F5F7FA;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -41,8 +41,9 @@ header ul {
 }
 
 
-header div {
-    gap: 14px;
+header #button_connexion {
+    display: flex;
+    gap: 0.9rem;
 }
 
 #login {
@@ -58,6 +59,10 @@ header div {
     color: white;
     border: 0;
     border-radius: 6px;
+}
+
+#burger_menu {
+    display: none;
 }
 
 main {
@@ -82,8 +87,14 @@ h1 + p {
 }
 
 .bgc_grey {
-    width: 100%;
+    width: 100vw;
     background-color: #F5F7FA;
+    display: flex;
+    justify-content: center;
+}
+
+.width100 {
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -115,7 +126,9 @@ h1 + p {
 #our_clients {
     display: flex;
     flex-direction: column;
-    width: 1152px;
+    align-items: center;
+    width: 100vw;
+    max-width: 1152px;
     gap: 20px;
 }
 
@@ -131,7 +144,7 @@ h1 + p {
 }
 
 #logoclients {
-    width: 1152px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
@@ -141,7 +154,6 @@ h1 + p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1152px;
 }
 
 #who_is_nextcent h2 {
@@ -150,11 +162,10 @@ h1 + p {
 }
 
 #cardsparent {
+    width: 1152px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1152px;
     padding-top: 1rem;
 }
 
@@ -389,12 +400,14 @@ h3 + p {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 #get_a_demo p {
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: bold;
     text-align: center;
+    width: 800px;
 }
 
 #get_a_demo button {
@@ -410,8 +423,627 @@ h3 + p {
 
 footer {
     width: 100%;
+ background-color: #263238;
 }
 
-footer img {
+.bgc_darkgrey {
+    background-color: #263238;
+    height: 328px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.bgc_darkgrey a {
+    color: white;
+}
+
+#company_infos {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#logo_footer {
+    width: 191px;
+    height: 29.67px;
+}
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+#rs_footer {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#global_infos {
+    display: flex;
+    gap: 30px;
+}
+
+#global_infos div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#global_infos h4 {
+    font-size: 1.25rem;
+}
+
+#global_infos div ul {
+    list-style: none;
+    display: flex;
+    flex-direction:column ;
+    gap: 12px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+#newsletter input{
+    border: 0;
+}
+
+#newsletter label{
+    font-size: 1.25rem;
+}
+
+#send_email{
+    display: flex;
+    background-color: #525151;
+    color: white;
+    border-radius: 0.5rem;
+    width: 255px;
+    height: 40px;
+    padding: 0 0.75rem;
+    justify-content: center;
+}
+
+#send_email button {
+    background-color: #525151;
+    border: 0;
+    display: flex;
+}
+
+#send_email input {
+    background-color: #525151;
+
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: #F5F7FA;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#header_parent {
+ /* background-color: antiquewhite; */
+    width: 1152px;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    display: none;
+}
+
+#login {
+    padding: 10px 20px;
+    color: #4CAF4F;
+    background-color: white;
+    border: 0;
+    border-radius: 6px;
+}
+#singup {
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+}
+
+#burger_menu {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+
+}
+
+h1 + p {
+    font-size: 4rem;
+    color: #4CAF4F;
+}
+
+.bgc_grey {
+    width: 100%;
+    background-color: #F5F7FA;
+    display: flex;
+    justify-content: center;
+}
+
+#lessons_and_insights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1152px;
+    padding: 96px 0;
+    padding: 0 1rem;
+}
+
+#text_section1 {
+    padding-bottom: 1rem;
+}
+
+#text_section1 + p {
+    padding-bottom: 2rem;
+}
+
+#register {
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+}
+
+#our_clients {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#text_section2 {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 338px;
+    text-align: center;
+}
+
+#text_section2 h2 {
+    padding-bottom: 0.5rem;
+}
+
+#logoclients {
+    width: 338px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.mobile_none {
+    display: none;
+}
+
+#who_is_nextcent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1152px;
+}
+
+#who_is_nextcent h2 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+#cardsparent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1152px;
+    padding-top: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 299px;
+    height: 280px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.041);
+    border-radius: 4px;
+    gap: 1rem;
+}
+
+div h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h3 + p {
+    text-align: center;
+    font-size: 14px;
+}
+
+#the_unseen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1152px;
+    padding: 40px 1rem;
+}
+
+#text_the_unseen p {
+    font-size: 14px;
+}
+
+#text_the_unseen_padding p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.learnmore {
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+}
+
+#helping_a_local {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 75px 1rem;
+    justify-content: space-between;
+}
+
+.allcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.allcards div {
+    display: flex;
+    flex-direction: column;
+}
+
+#cardstop {
+    margin-bottom: 40px;
+}
+
+
+.cards2 {
+    display: flex;
+    flex-direction: row;
+    width: 255px;
+    gap: 1rem;
+}
+
+.cards2 div {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+}
+
+.font2rem {
+    font-size: 2rem;
+}
+
+.font1-75rem {
+    font-size: 1.75rem
+}
+#p_business {
+    color: #4CAF4F;
+    font-size: 36px;
+}
+
+#text_helping_a_local {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#how_to_design {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 78px;
+    width: 1152px;
+    padding: 70px 0;
+}
+
+#text_how_to_design p {
+    margin: 2rem 0;
+}
+
+#tim_smith {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1152px;
+    display: flex;
+    margin: 0 144px;
+    gap: 78px;
+    padding: 70px 0;
+}
+
+#text_tim_smith {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#text_tim_smith h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #4CAF4F;
+    font-size: 1.25rem;
+}
+
+#socialmedias {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+#socialmedias span {
+    display: flex;
+    align-items: center;
+}
+
+#socialmedias span a {
+    color: #4CAF4F;
+}
+
+#all_img {
+    display: flex;
+    flex-direction: row;
+    gap: 2.7rem;
+}
+
+#caring_is_the_new_marketing {
+    width: 1152px;
+    margin-bottom: 200px;
+}
+
+#caring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#caring p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#all_articles {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.absolute {
+    background-color: white;
+    position: absolute;
+    top: 65%;
+    width: 317px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(163, 163, 163) 0px 0px 10px;
+    height: 200px;
+    font-size: 0.6rem;
+    gap: 1rem;
+}
+
+#all_articles article {
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+    gap: 1rem;
+    align-items: center;
+}
+
+#all_articles article h3 {
+    font-size: 1.4rem;
+}
+
+#all_articles article a {
+    color: #4CAF4F;
+    font-size: 1.25rem;
+}
+
+#caring_is_the_new_marketing article span{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#get_a_demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#get_a_demo p {
+    font-size: 4rem;
+    font-style: bold;
+    text-align: center;
+    width: 800px;
+}
+
+#get_a_demo button {
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer {
+    width: 100%;
+ background-color: #263238;
+}
+
+.bgc_darkgrey {
+    background-color: #263238;
+    height: 328px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.bgc_darkgrey a {
+    color: white;
+}
+
+#company_infos {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#logo_footer {
+    width: 191px;
+    height: 29.67px;
+}
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+#rs_footer {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#global_infos {
+    display: flex;
+    gap: 30px;
+}
+
+#global_infos div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#global_infos h4 {
+    font-size: 1.25rem;
+}
+
+#global_infos div ul {
+    list-style: none;
+    display: flex;
+    flex-direction:column ;
+    gap: 12px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+#newsletter input{
+    border: 0;
+}
+
+#newsletter label{
+    font-size: 1.25rem;
+}
+
+#send_email{
+    display: flex;
+    background-color: #525151;
+    color: white;
+    border-radius: 0.5rem;
+    width: 255px;
+    height: 40px;
+    padding: 0 0.75rem;
+    justify-content: center;
+}
+
+#send_email button {
+    background-color: #525151;
+    border: 0;
+    display: flex;
+}
+
+#send_email input {
+    background-color: #525151;
+
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
 }
