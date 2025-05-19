@@ -12,39 +12,43 @@
   </head>
   <body>
     <header>
-      <img src="images/Logo.png" alt="" />
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Feature</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Testimonial</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </nav>
-      <div>
-        <a id="login">Login</a>
-        <a id="singup">Sing up</a>
+      <div id="header_parent">
+        <img src="images/Logo.png" alt="" />
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a id="login">Login</a>
+          <a id="singup">Sing up</a>
+        </div>
       </div>
     </header>
     <main>
-      <div class="section1">
-        <div>
-          <div id="text_section1">
-            <h1>Lessons and insights</h1>
-            <p><b>from 8 years</b></p>
+      <div class="bgc_grey">
+        <section id="lessons_and_insights">
+          <div>
+            <div id="text_section1">
+              <h1>Lessons and insights</h1>
+              <p><b>from 8 years</b></p>
+            </div>
+            <p>
+              Where to grow your business as a photographer: site or social media?
+            </p>
+            <button id="register">Register</button>
           </div>
-          <p>
-            Where to grow your business as a photographer: site or social media?
-          </p>
-          <button id="register">Register</button>
-        </div>
-        <div>
-          <img src="images/h1.png" alt="" />
-        </div>
+          <div>
+            <img src="images/h1.png" alt="" />
+          </div>
+        </section>
       </div>
-      <div class="section2">
+      <section id="our_clients">
         <div id="text_section2">
           <h2>Our Clients</h2>
           <p>We have been working with some Fortune 500+ clients</p>
@@ -58,15 +62,15 @@
           <img src="images/client6.png" alt="" />
           <img src="images/client7.png" alt="" />
         </div>
-      </div>
-      <div class="section3">
+      </section>
+      <section id="who_is_nextcent">
         <h2>
-          Manage your entire community <br />
+          Manage your entire community <br/>
           in a single system
         </h2>
         <p>Who is Nextcent suitable for?</p>
-      </div>
-      <div class="cardsparent">
+      </section>
+      <section id="cardsparent">
         <div class="cards">
           <img src="images/membership.png" alt="" />
           <h3>Membership Organisations</h3>
@@ -100,28 +104,30 @@
             payments
           </p>
         </div>
-      </div>
-      <div class="section4">
-        <img src="images/pixelgrade.png" alt="" />
-        <div id="text_section4">
-          <div id="section4_padding">
-            <h2>The unseen of spending three years at Pixelgrade</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
-              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
-              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
-              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
-              elementum pulvinar odio.
-            </p>
+      </section>
+      <div class="bgc_grey">
+        <section id="the_unseen">
+          <img src="images/pixelgrade.png" alt="" />
+          <div id="text_the_unseen">
+            <div id="text_the_unseen_padding">
+              <h2>The unseen of spending three years at Pixelgrade</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+                Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+                tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+                Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+                elementum pulvinar odio.
+              </p>
+            </div>
+            <button class="learnmore">Learn More</button>
           </div>
-          <button class="learnmore">Learn More</button>
-        </div>
+        </section>
       </div>
-      <div class="section5">
-        <div id="text_section5">
+      <section id="helping_a_local">
+        <div id="text_helping_a_local">
           <p class="font2rem">Helping a local</p>
-          <p class="p_section5">business reinvent itself</p>
+          <p id="p_business">business reinvent itself</p>
           <p>We reached here with our hard work and dedication</p>
         </div>
         <div class="allcards">
@@ -129,14 +135,14 @@
             <div class="cards2">
               <img src="images/membre.png" alt="" />
               <div>
-                <p>2,245,341</p>
+                <p class="font1-75rem">2,245,341</p>
                 <p>Members</p>
               </div>
             </div>
             <div class="cards2">
               <img src="images/club2.png" alt="" />
               <div>
-                <p>46,328</p>
+                <p class="font1-75rem">46,328</p>
                 <p>Clubs</p>
               </div>
             </div>
@@ -145,41 +151,43 @@
             <div class="cards2">
               <img src="images/event.png" alt="" />
               <div>
-                <p>828,867</p>
+                <p class="font1-75rem">828,867</p>
                 <p>Event Bookings</p>
               </div>
             </div>
             <div class="cards2">
               <img src="images/creditcard.png" alt="" />
               <div>
-                <p>1,926,436</p>
+                <p class="font1-75rem">1,926,436</p>
                 <p>Payments</p>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <div class="bgc_grey">
+        <section id="how_to_design">
+          <img src="images/howtodesign.png" alt="" />
+          <div id="text_how_to_design">
+            <h2>How to design your site footer like we did</h2>
+            <p>
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+              augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+              elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+              habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi
+              facilisis finibus. In euismod augue vitae nisi ultricies, non
+              aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
+              efficitur quis massa. Praesent felis est, finibus et nisi ac,
+              hendrerit venenatis libero. Donec consectetur faucibus ipsum id
+              gravida.
+            </p>
+            <button class="learnmore">Learn More</button>
+          </div>
+        </section>
       </div>
-      <div class="section6">
-        <img src="images/howtodesign.png" alt="" />
-        <div id="text_section6">
-          <h2>How to design your site footer like we did</h2>
-          <p>
-            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
-            augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
-            elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
-            habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi
-            facilisis finibus. In euismod augue vitae nisi ultricies, non
-            aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
-            efficitur quis massa. Praesent felis est, finibus et nisi ac,
-            hendrerit venenatis libero. Donec consectetur faucibus ipsum id
-            gravida.
-          </p>
-          <button class="learnmore">Learn More</button>
-        </div>
-      </div>
-      <div class="section7">
+      <section id="tim_smith">
         <img src="images/mecbizarre.png" alt="" />
-        <div id="text_section7">
+        <div id="text_tim_smith">
           <p>
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
@@ -209,56 +217,58 @@
             </span>
           </div>
         </div>
-      </div>
-      <section id="part_8">
-        <span id="caring">
-          <h2>Caring is the new marketing</h2>
-          <p>
-            The Nexcent blog is the best place to read about the latest
-            membership insights, trends and more. See who's joining the
-            community, read about how our community are increasing their
-            membership income and lot's more.
-          </p>
-        </span>
-        <div id="all_articles">
-          <article>
-            <img src="images/blog1.png" alt="" />
-            <div class="absolute">
-              <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
-              <span>
-                <a href="">Readmore</a>
-                <a href=""><img src="images/rightarrow.png" alt="" /></a>
-              </span>
-            </div>
-          </article>
-          <article>
-            <img src="images/blog2.png" alt="" />
-            <div class="absolute">
-              <h3>
-                What are your safeguarding responsibilities and how can you
-                manage them?
-              </h3>
-              <span>
-                <a href="">Readmore</a>
-                <a href=""><img src="images/rightarrow.png" alt="" /></a>
-              </span>
-            </div>
-          </article>
-          <article>
-            <img src="images/blog3.png" alt="" />
-            <div class="absolute">
-              <h3>Revamping the Membership Model with Triathlon Australia</h3>
-              <span>
-                <a href="">Readmore</a>
-                <a href=""><img src="images/rightarrow.png" alt="" /></a>
-              </span>
-            </div>
-          </article>
-        </div>
       </section>
-      <section id="part_9">
+      <div class="bgc_grey">
+        <section id="caring_is_the_new_marketing">
+          <span id="caring">
+            <h2>Caring is the new marketing</h2>
+            <p>
+              The Nexcent blog is the best place to read about the latest
+              membership insights, trends and more. See who's joining the
+              community, read about how our community are increasing their
+              membership income and lot's more.
+            </p>
+          </span>
+          <div id="all_articles">
+            <article>
+              <img src="images/blog1.png" alt="" />
+              <div class="absolute">
+                <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
+                <span>
+                  <a href="">Readmore</a>
+                  <a href=""><img src="images/rightarrow.png" alt="" /></a>
+                </span>
+              </div>
+            </article>
+            <article>
+              <img src="images/blog2.png" alt="" />
+              <div class="absolute">
+                <h3>
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </h3>
+                <span>
+                  <a href="">Readmore</a>
+                  <a href=""><img src="images/rightarrow.png" alt="" /></a>
+                </span>
+              </div>
+            </article>
+            <article>
+              <img src="images/blog3.png" alt="" />
+              <div class="absolute">
+                <h3>Revamping the Membership Model with Triathlon Australia</h3>
+                <span>
+                  <a href="">Readmore</a>
+                  <a href=""><img src="images/rightarrow.png" alt="" /></a>
+                </span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <section id="get_a_demo">
         <p><b>Pellentesque suscipit fringilla <br> libero eu.</b></p>
-        <button id="get_a_demo">Get a Demo</button>
+        <button>Get a Demo<img src="images/whiterightarrow.png" alt="" /></button>
         <a href=""><img src="images/whiterightarrow.png" alt="" /></a>
       </section>
     </main>

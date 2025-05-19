@@ -13,15 +13,20 @@ body {
 }
 
 header {
+    background-color: #F5F7FA;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#header_parent {
  /* background-color: antiquewhite; */
     width: 1152px;
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F5F7FA;
 }
-
 
 a {
     text-decoration: none;
@@ -56,6 +61,7 @@ header div {
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +81,14 @@ h1 + p {
     color: #4CAF4F;
 }
 
-.section1 {
+.bgc_grey {
+    width: 100%;
+    background-color: #F5F7FA;
+    display: flex;
+    justify-content: center;
+}
+
+#lessons_and_insights {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,10 +112,9 @@ h1 + p {
     border-radius: 6px;
 }
 
-.section2 {
+#our_clients {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 1152px;
     gap: 20px;
 }
@@ -125,19 +137,19 @@ h1 + p {
     padding-bottom: 40px;
 }
 
-.section3 {
+#who_is_nextcent {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1152px;
 }
 
-.section3 h2 {
+#who_is_nextcent h2 {
     text-align: center;
     padding-bottom: 0.5rem;
 }
 
-.cardsparent {
+#cardsparent {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -153,6 +165,9 @@ h1 + p {
     justify-content: center;
     width: 299px;
     height: 280px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.041);
+    border-radius: 4px;
+    gap: 1rem;
 }
 
 div h3 {
@@ -165,7 +180,7 @@ h3 + p {
     font-size: 14px;
 }
 
-.section4 {
+#the_unseen {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,11 +188,11 @@ h3 + p {
     padding: 40px 0;
 }
 
-#text_section4 p {
+#text_the_unseen p {
     font-size: 14px;
 }
 
-#section4_padding p {
+#text_the_unseen_padding p {
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
@@ -190,12 +205,12 @@ h3 + p {
     border-radius: 4px;
 }
 
-.section5 {
+#helping_a_local {
     display: flex;
     flex-direction: row;
     width: 1152px;
-    max-width: 1152px;
     padding: 75px 0;
+    justify-content: space-between;
 }
 
 .allcards {
@@ -212,12 +227,14 @@ h3 + p {
 
 #cardstop {
     margin-bottom: 40px;
-    width: 255px;
-    gap: 01px;
 }
 
-#cardsbottom {
+
+.cards2 {
+    display: flex;
+    flex-direction: row;
     width: 255px;
+    gap: 1rem;
 }
 
 .cards2 div {
@@ -230,16 +247,22 @@ h3 + p {
     font-size: 2rem;
 }
 
-.p_section5 {
+.font1-75rem {
+    font-size: 1.75rem
+}
+#p_business {
     color: #4CAF4F;
     font-size: 36px;
 }
 
-#text_section5 {
+#text_helping_a_local {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.section6 {
+#how_to_design {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -248,11 +271,11 @@ h3 + p {
     padding: 70px 0;
 }
 
-#text_section6 p {
+#text_how_to_design p {
     margin: 2rem 0;
 }
 
-.section7 {
+#tim_smith {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -264,15 +287,17 @@ h3 + p {
     padding: 70px 0;
 }
 
-#text_section7 {
+#text_tim_smith {
     display: flex;
     flex-direction: column;
 
 }
 
-#text_section7 h4 {
+#text_tim_smith h4 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    color: #4CAF4F;
+    font-size: 1.25rem;
 }
 
 #socialmedias {
@@ -296,16 +321,16 @@ h3 + p {
     gap: 2.7rem;
 }
 
+#caring_is_the_new_marketing {
+    width: 1152px;
+    margin-bottom: 200px;
+}
+
 #caring {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-}
-
-#part_8 {
-    width: 1152px;
-    margin-bottom: 200px;
 }
 
 #caring p {
@@ -323,7 +348,7 @@ h3 + p {
 .absolute {
     background-color: white;
     position: absolute;
-    top: 50%;
+    top: 65%;
     width: 317px;
     border-radius: 12px;
     display: flex;
@@ -347,32 +372,40 @@ h3 + p {
     font-size: 1.4rem;
 }
 
-#part_8 article span{
+#all_articles article a {
+    color: #4CAF4F;
+    font-size: 1.25rem;
+}
+
+#caring_is_the_new_marketing article span{
     display: flex;
     justify-content: center;
     gap: 0.5rem;
 }
 
-#part_9 {
-        display: flex;
+#get_a_demo {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-#part_9 p {
+#get_a_demo p {
     font-size: 3rem;
     font-style: bold;
     text-align: center;
 }
 
-#get_a_demo {
+#get_a_demo button {
     padding: 10px 20px;
     background-color: #4CAF4F;
     color: white;
     border: 0;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 footer {
